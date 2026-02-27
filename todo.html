@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代办事件</title>
+    <link rel="stylesheet" href="./todo.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部标题 -->
+        <div class="header">
+            <div class="left-header">
+                <h1>我的一天</h1>
+                <div class="date">2月17日 星期四</div>
+            </div>
+            <div class="right-header">
+                <span>今天</span>
+            </div>
+        </div>
+
+        <!-- 添加任务 -->
+        <div class="new-task">
+            <div class="new-task-icon">
+               <img src="./icon/plus_2997933.png" alt="新建" width="13px"> 
+            </div>
+            <input type="text" placeholder="添加任务">
+        </div>
+
+        <!-- 代办列表（容器） -->
+        <div class="todo-list">
+            <!-- 代办任务项 -->
+            <div class="task-item">
+                <div class="task-icon">
+                    <img src="./icon/circle_12634888.png" alt="代办事件" width="13px">
+                </div>
+                <div class="task-content">
+                    <div class="task-text">明天上午8点起床</div>
+                    <div class="task-type">任务</div>
+                </div>
+                <div class="task-icon">
+                    <img src="./icon/星星_star.png" alt="非重要事件" width="15px">
+                </div>
+            </div>
+            <div class="task-item">
+                <div class="task-icon">
+                    <img src="./icon/circle_12634888.png" alt="代办事件" width="13px">
+                </div>
+                <div class="task-content">
+                   <div class="task-text">下午2点参加开题报告答辩</div> 
+                   <div class="task-type">任务</div>
+                </div>
+                <div class="task-icon">
+                    <img src="./icon/星星_star.png" alt="非重要事件" width="15px">
+                </div>
+            </div>
+        </div>
+
+        <!-- 已完成列表（容器） -->
+        <div class="done-list">
+            <!-- 已完成任务项 -->
+            <div class="task-item done">
+                <div class="task-icon">
+                  <img src="./icon/校验_check-one.png" alt="已完成" width="15px">  
+                </div>
+                <div class="task-content">
+                   <div class="task-text">晚上去超市买东西</div> 
+                   <div class="task-type">任务</div>
+                </div>
+                <div class="task-icon">
+                    <img src="./icon/星星_star (1).png" alt="重要事件" width="15px"> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 隐藏的任务模板 -->
+    <div class="task-mod" style="display: none;">
+        <div class="task-item">
+            <div class="task-icon">
+                <img src="./icon/circle_12634888.png" alt="代办事件" width="13px">
+            </div>
+            <div class="task-content">
+                <div class="task-text">模板任务</div>
+                <div class="task-type">任务</div>
+            </div>
+            <div class="task-icon">
+                <img src="./icon/星星_star.png" alt="非重要事件" width="15px">
+            </div>
+        </div>
+    </div>
+
+    <script src="./todo.js"></script>
+</body>
+</html>

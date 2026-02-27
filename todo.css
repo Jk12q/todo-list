@@ -1,0 +1,106 @@
+/* 全局样式重置 */
+body {
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+/* 主容器 */
+.container {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    min-height: 500px;
+}
+
+/* 头部样式 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.header .left-header h1 {
+    font-size: 25px;
+    margin: 0;
+}
+.header .left-header .date {
+    margin-top: 5px;
+    color: #666;
+}
+.header .right-header {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 添加任务区域 */
+.new-task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.new-task .new-task-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: center;
+}
+.new-task input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+/* 通用任务项样式（代办/已完成共用） */
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #eee;
+}
+.task-item .task-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: center;
+    cursor: pointer; /* 鼠标悬浮变手型 */
+}
+.task-item .task-content {
+    flex: 1; /* 占满剩余空间 */
+}
+.task-item .task-text {
+    font-size: 18px;
+}
+.task-item .task-type {
+    color: #666;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+/* 已完成任务样式 */
+.task-item.done .task-text {
+    text-decoration: line-through #999 solid;
+    color: #999;
+}
+.task-item.done .task-type {
+    color: #999;
+}
+
+/* 列表标题（可选，提升可读性） */
+.todo-list::before, .done-list::before {
+    content: "待办任务";
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #333;
+}
+.done-list::before {
+    content: "已完成任务";
+}
